@@ -20,7 +20,6 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "typecheck": "vue-tsc --noEmit",
-    "postinstall": "quasar prepare --silent",
     "rsbuild:dev": "rsbuild dev",
     "rsbuild:build": "rsbuild build",
     "rsbuild:preview": "rsbuild preview"
