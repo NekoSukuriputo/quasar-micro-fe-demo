@@ -2,8 +2,9 @@
 FROM node:22-alpine AS builder
 WORKDIR /app
 
-# Copy package.json
+# Copy package.json and quasar config (to prevent quasar prepare error)
 COPY package*.json ./
+COPY quasar.con* ./
 RUN npm install
 
 # Copy source code and build
